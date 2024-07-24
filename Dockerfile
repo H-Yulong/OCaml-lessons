@@ -18,5 +18,7 @@ ADD session2_empty.ipynb /home/opam/notebooks/
 ADD session3.ipynb /home/opam/notebooks/
 ADD session3_empty.ipynb /home/opam/notebooks/
 ADD session4.ipynb /home/opam/notebooks/
+ADD session7.ipynb /home/opam/notebooks/
+ADD session7_empty.ipynb /home/opam/notebooks/
 
 RUN yes | jupyter kernelspec uninstall python3 
