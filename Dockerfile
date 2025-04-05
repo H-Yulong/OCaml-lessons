@@ -11,7 +11,7 @@ RUN opam exec -- ocaml-jupyter-opam-genspec
 RUN jupyter kernelspec install --name ocaml-jupyter "$(opam config var share)/jupyter" --user
 
 RUN mkdir /home/opam/full
-RUN mkdir /home/opan/empty
+RUN mkdir /home/opam/empty
 ADD 01_List_basic.ipynb /home/opam/full/
 ADD 02_List_advanced.ipynb /home/opam/full/
 ADD 03_Trees_and_calculator.ipynb /home/opam/full/
