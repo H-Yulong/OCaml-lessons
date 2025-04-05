@@ -11,14 +11,12 @@ RUN opam exec -- ocaml-jupyter-opam-genspec
 RUN jupyter kernelspec install --name ocaml-jupyter "$(opam config var share)/jupyter" --user
 
 RUN mkdir /home/opam/notebooks
+ADD 01_List_basic.ipynb /home/opam/notebooks/
+ADD 02_List_advanced.ipynb /home/opam/notebooks/
+ADD 03_Trees_and_calculator.ipynb /home/opam/notebooks/
 ADD session1.ipynb /home/opam/notebooks/
 ADD session1_empty.ipynb /home/opam/notebooks/
 ADD session2.ipynb /home/opam/notebooks/
 ADD session2_empty.ipynb /home/opam/notebooks/
-ADD session3.ipynb /home/opam/notebooks/
-ADD session3_empty.ipynb /home/opam/notebooks/
-ADD session4.ipynb /home/opam/notebooks/
-ADD session7.ipynb /home/opam/notebooks/
-ADD session7_empty.ipynb /home/opam/notebooks/
 
 RUN yes | jupyter kernelspec uninstall python3 
