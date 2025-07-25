@@ -19,6 +19,7 @@ ADD 04_2D_grid.ipynb /home/opam/full/
 ADD 05_Finite_state_automata.ipynb /home/opam/full/
 ADD 06_Markov_chains.ipynb /home/opam/full/
 ADD 07_Language_interpreter.ipynb /home/opam/full/
+ADD 08_Sequence.ipynb /home/opam/full/
 
 ADD empty/01_List_basic.ipynb /home/opam/empty/
 ADD empty/02_List_advanced.ipynb /home/opam/empty/
@@ -27,5 +28,6 @@ ADD empty/04_2D_grid.ipynb /home/opam/empty/
 ADD empty/05_Finite_state_automata.ipynb /home/opam/empty/
 ADD empty/06_Markov_chains.ipynb /home/opam/empty/
 ADD empty/07_Language_interpreter.ipynb /home/opam/empty/
+ADD empty/08_Sequence.ipynb /home/opam/empty
 
 RUN yes | jupyter kernelspec uninstall python3 
